@@ -105,6 +105,10 @@
 
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container text-center">
+            <span class="text-muted">Developed by Yash</span>
+            <p>Follow me on:</p><a href="https://www.instagram.com/ytrivedi13007/"><i class="fab fa-instagram"></i></a><a href="https://github.com/YashT1304"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="container text-center">
             <span class="text-muted">Copyright &copy;2020</span>
         </div>
     </footer>
