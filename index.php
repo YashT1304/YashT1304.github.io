@@ -32,12 +32,31 @@
 </head>
 <body>
 <!-- Image and text -->
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">
+<nav class="navbar navbar-light bg-light sticky-top navbar-expand-lg">
+<a class="navbar-brand" href="#">
     <img src="yt.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-    YTeck
-    
+    YTeck   
   </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+  
+  <ul class="nav justify-content-center nav-tabs mr-auto mt-2 mt-lg-0">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.php">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="what_is_covid.php">What is Covid-19?</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="prevention.php">Prevention</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="about.php" >About</a>
+  </li>
+</ul>
+  </div>
 </nav>
     <div class="container-fluid bg-light p-3 text-center ">
         <h1 class="">Covid-19 Tracker</h1>
@@ -69,7 +88,7 @@
     <div class="container-fluid" >
         <div class="table-responsive">
             <table class="table table-striped" id="myTable">
-                <thead class="thead-dark">
+                <thead class="thead-dark ">
                     <tr>
                         <th scope="col" >Countries</th>
                         <th class=" text-center" scope="col">Confirmed</th>
@@ -94,8 +113,8 @@
   <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5z"/>
 </svg></small> <?php }?>   
                             </td>
-                            <td class=" text-center"><?php echo $value[$days_count]['recovered'];?></td>
-                            <td class=" text-center"><?php echo $value[$days_count]['deaths'];?></td>
+                            <td class=" text-center text-success"><?php echo $value[$days_count]['recovered'];?></td>
+                            <td class=" text-center text-muted"><?php echo $value[$days_count]['deaths'];?></td>
                         </tr>
                     <?php }?>
                 </tbody>
@@ -106,7 +125,7 @@
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container text-center">
             <span class="text-muted">Developed by Yash</span>
-            <p>Follow me on:</p><a href="https://www.instagram.com/ytrivedi13007/"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;<a href="https://github.com/YashT1304"><i class="fab fa-github"></i></a>
+            <p>Follow me on:</p><a href="https://www.instagram.com/ytrivedi13007/" target="_blank"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;<a href="https://github.com/YashT1304" target="_blank"><i class="fab fa-github"></i></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/yash-trivedi-919ab1193/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
         <div class="container text-center">
             <span class="text-muted">Copyright &copy;2020</span>
