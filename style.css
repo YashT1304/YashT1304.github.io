@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body{
   font-family: 'Alegreya Sans SC', sans-serif;
 }
